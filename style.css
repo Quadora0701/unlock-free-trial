@@ -314,7 +314,8 @@ input:focus {
   height: auto;
 }
 .video-area {
-  width: 100%;
+  width: 82%;
+  max-width: 330px;
   margin: 20px auto 28px;
 }
 
@@ -322,5 +323,6 @@ input:focus {
   display: block;
   width: 100%;
   height: auto;
+  margin: 0 auto;
   background: #000;
 }
