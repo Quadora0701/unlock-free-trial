@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <title>UNLOCK FREE TRIAL</title>
+  <meta
+    name="description"
+    content="物語とともに楽しむ、UNLOCKのお試し謎。"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="game">
+
+    <!-- 表紙 -->
+    <section class="screen active" id="cover">
+      <div class="card cover-card">
+        <p class="brand">Quadora presents</p>
+
+        <h1>UNLOCK</h1>
+        <p class="subtitle">FREE TRIAL</p>
+
+        <div class="key-mark">♢</div>
+
+        <p class="lead">
+          あなたのもとに、<br>
+          一通の手紙が届いた。
+        </p>
+
+        <button type="button" data-next="prologue">
+          物語をはじめる
+        </button>
+
+        <p class="information">
+          所要時間：約5〜10分<br>
+          推奨環境：スマートフォン
+        </p>
+      </div>
+    </section>
+
+    <!-- プロローグ -->
+    <section class="screen" id="prologue">
+      <div class="card">
+        <p class="chapter">PROLOGUE</p>
+
+        <div class="story">
+          <p>
+            差出人の名前がない、古びた手紙。
+          </p>
+
+          <p>
+            封筒の中には、短い文章と、<br>
+            一枚の写真が入っていた。
+          </p>
+
+          <p>
+            なぜか、ずっと忘れていた何かを<br>
+            思い出せるような気がした。
+          </p>
+
+          <p>
+            手紙に残された謎を解き、<br>
+            隠された言葉を導こう。
+          </p>
+        </div>
+
+        <button type="button" data-next="puzzle">
+          手紙を読む
+        </button>
+      </div>
+    </section>
+
+    <!-- 謎 -->
+    <section class="screen" id="puzzle">
+      <div class="card">
+        <p class="chapter">PUZZLE</p>
+        <h2>隠された言葉を導け</h2>
+
+        <div class="puzzle-placeholder">
+          <p>ここに謎の画像を表示します</p>
+        </div>
+
+        <label for="answer">答えを入力してください</label>
+
+        <input
+          id="answer"
+          type="text"
+          inputmode="text"
+          autocomplete="off"
+          placeholder="ひらがなで入力"
+        >
+
+        <button type="button" id="answerButton">
+          回答する
+        </button>
+
+        <p id="answerMessage" class="message" aria-live="polite"></p>
+
+        <details class="hint">
+          <summary>ヒントを見る</summary>
+          <p>
+            謎の中にある文字や配置を、よく確認してみよう。
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 正解 -->
+    <section class="screen" id="clear">
+      <div class="card">
+        <p class="chapter">UNLOCKED</p>
+        <div class="unlock-mark">🔓</div>
+
+        <h2>鍵が、静かに開いた。</h2>
+
+        <div class="story">
+          <p>
+            導き出した言葉を見つめた瞬間、<br>
+            記憶の奥で何かが揺れた。
+          </p>
+
+          <p>
+            これは、まだ物語のはじまりにすぎない。
+          </p>
+        </div>
+
+        <button type="button" data-next="ending">
+          その先へ
+        </button>
+      </div>
+    </section>
+
+    <!-- エンディング -->
+    <section class="screen" id="ending">
+      <div class="card">
+        <p class="chapter">THE STORY CONTINUES</p>
+        <h2>UNLOCK</h2>
+
+        <p class="ending-copy">
+          一通の手紙と古い写真を手がかりに、<br>
+          忘れていた記憶をたどる物語。
+        </p>
+
+        <a
+          class="link-button"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UNLOCKの最新情報を見る
+        </a>
+
+        <button type="button" class="sub-button" id="restartButton">
+          最初から遊ぶ
+        </button>
+
+        <p class="copyright">
+          © Quadora
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
