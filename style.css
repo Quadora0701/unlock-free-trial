@@ -313,3 +313,14 @@ input:focus {
   width: 100%;
   height: auto;
 }
+.video-area {
+  width: 100%;
+  margin: 20px auto 28px;
+}
+
+.intro-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
