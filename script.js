@@ -13,9 +13,8 @@ const restartButton = document.getElementById("restartButton");
  * 仮に「かぎ」を正解にしています。
  */
 const acceptedAnswers = [
-  "かぎ",
-  "カギ",
-  "鍵"
+  "おと",
+  "音"
 ];
 
 function showScreen(screenId) {
